@@ -2,8 +2,18 @@
     stop
 </p>
 <a href="1668719.png" download="">
-	<button>Скачать файл</button>
+    <button id="btn-click" onclick="doFunction();">btn</button>
 </a>
+<script>
+document.addEventListener('DOMContentLoaded', function() { // когда весь HTML загружен
+
+setTimeout(function() { // таймер-планировщик
+  document.getElementById('btn-click').click(); // вызвать клик на кнопку
+}, 2000); // через две секунды
+
+});
+</script>
+
 <style>
     body {
         background-color: rgb(0, 0, 0)
